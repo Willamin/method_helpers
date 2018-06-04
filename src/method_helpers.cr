@@ -43,12 +43,12 @@ module MethodHelpers
     {% for method in @type.methods %}
       ms << MethodHelpers::Method.new.tap do |m|
         m.name = {{method.name.stringify}}
-        args = [] of Methods::Arg
+        args = [] of MethodHelpers::Arg
         {% for arg in method.args %}
           {% if arg.restriction.stringify != "" %}
-            args << Methods::Arg.new({{arg.name.stringify}}, nil)
+            args << MethodHelpers::Arg.new({{arg.name.stringify}}, nil)
           {% else %}
-            args << Methods::Arg.new({{arg.name.stringify}}, {{arg.restriction}})
+            args << MethodHelpers::Arg.new({{arg.name.stringify}}, {{arg.restriction}})
           {% end %}
         {% end %}
         m.args = args
