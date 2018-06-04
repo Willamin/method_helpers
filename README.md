@@ -19,6 +19,7 @@ require "method_helpers"
 ```
 
 TODO: Write usage instructions here
+(until I write usage here, checkout `spec/method_helpers_spec.cr`)
 
 ## Development
 
