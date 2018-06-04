@@ -22,10 +22,6 @@ TODO: Write usage instructions here
 
 Until I write usage here, take a look at [the tests](spec/method_helpers_spec.cr).
 
-## Development
-
-TODO: Write development instructions here
-
 ## Contributing
 
 1. Fork it ( https://github.com/willamin/method_helpers/fork )
