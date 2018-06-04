@@ -63,5 +63,5 @@ module MethodHelpers
 end
 
 class Object
-  include Methods
+  include MethodHelpers
 end
